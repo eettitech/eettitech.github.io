@@ -76,9 +76,11 @@
 			height: 75px;
 			/*background-color: #fff;*/
 			/*box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);*/
-			position: relative;
+			position: fixed;
+			top: 0;
 			width: 100%;
 			z-index: 1000;
+			background-color: rgb(41, 50, 79);
 		}
 		.header .leftLogo{
 			width: 250px;
@@ -103,7 +105,7 @@
 			font-size: 16px;
 		}
 		.header .rightNav > a.active{
-			border-bottom: 3px solid #459568;
+			border-bottom: 3px solid #33ff66;
 			text-decoration: none;
 			color: #fff;
 		}
@@ -359,27 +361,143 @@
 			box-shadow: 0 0 4px 4px rgba(0,0,0,0.1);
     		transition: 0.25s;
 		}
+		.service{
+			display: none;
+		}
+		.service p{
+			font-size: 16px;
+		}
+		.service .h2{
+			margin-top: 0;
+		}
+		.service.active{
+			display: block;
+		}
+		.serNav a{
+			display: block;
+		}
+		.servLink{
+			background-color: #f0f0f0;
+			text-decoration: none;
+			padding: 12px 10px;
+			color: #444;
+			font-weight: bold;
+			border-bottom: 1px solid #fff;
+		}
+		.servLink:hover{
+			text-decoration: none;
+			box-shadow: 0 0 4px 2px rgba(0,0,0,0.15);
+		}
+		.servLink .fa{
+			visibility: hidden;
+			float: right;
+		}
+		.servLink.active{
+			background-color: #444;
+			color: #fff;
+		}
+		.servLink.active .fa{
+			visibility: visible; 
+		}
 	</style>
 </head>
 <body>
-	<div class='container-fluid paddingReset'>
-		<div class="sidenav">
-		  <a href="#about">About</a>
-		  <a href="#services">Services</a>
-		  <a href="#clients">Clients</a>
-		  <a href="#contact">Contact</a>
+	<div class='header'>
+		<div class='leftLogo'><img src="logo.png" class="logo_img" /></div>
+		<div class='rightNav'>
+			<a href='index.html#page_1' class='navItem navItem1' data-val="page_1" data-speed="1">Home</a>
+			<a href='index.html#page_1a' class='navItem navItem2' data-val="page_1a" data-speed="2">About Us</a>
+			<a href='index.html#page_2' class='navItem navItem3 active' data-val="page_2" data-speed="3">Services</a>
+			<a href='index.html#page_4' class='navItem navItem4' data-val="page_4" data-speed="4">Products</a>
 		</div>
-
-		<div class="main">
-		  <h2>Auto Sidebar</h2>
-		  <p>This sidebar is as tall as its content (the links), and is always shown.</p>
-		  <p>Scroll down the page to see the result.</p>
-		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-		</div>  
 	</div>
+	<div class='container paddingReset' style="margin-top: 100px;">
+		<div class="col-lg-12 col-md-12">
+			<div class="col-lg-3 col-md-3 serNav">
+			  <a href="#service1" class="servLink servLink1 active">Social Media Marketing (SMM) <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service2" class="servLink servLink2">Search Engine Optimization (SEO) <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service3" class="servLink servLink3">Search Engine Marketing & PPC	 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service4" class="servLink servLink4">Email Marketing <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service5" class="servLink servLink5">Influencer Marketing	 <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service6" class="servLink servLink6">Mobile Marketing <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service7" class="servLink servLink7">Public Relations Content <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service8" class="servLink servLink8">Instant Messaging Marketing & SMS <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			  <a href="#service9" class="servLink servLink9">Audio Marketing & Digital Voice Calling <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+			</div>
+			<div class="col-lg-9 col-md-9">
+				<div id="service1" class="col-lg-12 service active">
+					<div class="h2">Social Media Marketing (SMM)</div>
+					<p>Social Media Marketing is from the youngest and most popular types of Digital Marketing that help marketers advance their brand image in a most powerful and trendy manner.</p>
+					<p>SMM is nowadays preferred by different businesses for optimizing the image of a brand, business, product, or an individual. We all are mostly aware of different social networks around us such as FACEBOOK, GOOGLE ADS, TWITTER, INSTAGRAM, YOUTUBE, LINKEDIN, SNAPCHAT PINTEREST, etc.</p>
+				</div>
+				<div id="service2" class="col-lg-12 service">
+					<div class="h2">Search Engine Optimization (SEO)</div>
+					<p>Search Engine Optimization helps marketers enhance the ranking of a site or website page in the unpaid “organic” search lists. SEO is from the types of Digital Marketing activities, businesses can make their website pages rank higher in the SERPs by increasing visibility, reach, authority and Alexa scores.</p>
+					<p>In case you did not understand what a SERP means, it’s the short form for Search Engine Results Page.</p>
+					<p>SEO helps you gain higher positions in search results naturally. It means that it helps you to get more visitors, awareness, traffic, digital branding, leads, and conversions.</p>
+					<p>Search Engine Optimization works around some of the well-characterized set of principles such as optimizing a page for specific keywords, and managing links from different sites that also use similar kinds of keywords, and so forth.</p>
+					<p>Manipulating the Search Engine framework is no more a prudent practice as your site can be penalized via Google’s Penguin update. So, you need to play it all clean.</p>
+				</div>
+				<div id="service3" class="col-lg-12 service">
+					<div class="h2">Search Engine Marketing & PPC</div>
+					<p>Search Engine Marketing (SEM) is one of the most primary types of Digital Marketing activities that help businesses gain market online via Ads on search engines such as Google, Bing or Yahoo.</p>
+					<p>SEM assists in optimizing the brand presence and conversions for businesses through paid and unpaid advertising.</p>
+					<p><strong>Unpaid SEM is SEO while Paid SEM is PPC.</strong></p>
+					<p>PPC is one of the speediest types of Digital Marketing channels that drive targeted traffic to your web pages and related services.</p>
+					<p>PPC can be understood as buying traffic via paid search listings that help marketers get more web traffic through desktop and mobile web searches.</p>
+					<p>There are different synonyms and acronyms related to SEM such as Paid search ads, Paid search advertising, PPC (pay-per-click), PPC (pay-per-call), CPC (cost-per-click), and CPM (cost-per-thousand impressions).</p>
+				</div>
+				<div id="service4" class="col-lg-12 service">
+					<div class="h2">Email Marketing</div>
+					<p>Email marketing is one of the oldest types of Digital Marketing that is still highly contemporary and fruitful. Marketers use emails for developing relationships with their potential and existing customers that help them generate leads and ensure their conversions.</p>
+					<p>Different Email Marketing Components</p>
+					<ul>
+						<li>Newsletter</li>
+						<li>Announcements</li>
+						<li>Event Invitation</li>
+						<li>Marketing Offer</li>
+					</ul>
+					<p>Email Marketing is advisable for all kinds of businesses as it is highly cost-effective and considered as the best types of Digital Marketing that ensure best conversions.</p>
+				</div>
+				<div id="service5" class="col-lg-12 service">
+					<div class="h2">Influencer Marketing</div>
+					<p>This type of marketing has regularly been employed outside of digital circles, too – brands sponsoring sports stars, for example. If you can get a famous person to endorse your brand online, you will create a pathway between their audience and yours, encouraging their audience to investigate your product or service further. </p>
+					<p>If you’re a smaller brand, you can still use influencers to your advantage. You don’t need influencers with millions of fans to market your products; an influencer with a few thousand loyal followers within a specific, relevant field can also be incredibly valuable. In fact, the more personal relationship between the influencer and their smaller fan base can be particularly beneficial, as it could make your click-through rate higher. </p>
+				</div>
+				<div id="service6" class="col-lg-12 service">
+					<div class="h2">Mobile Marketing</div>
+					<p>Mobile devices continue to be used prolifically. According to Adweek (http://www.adweek.com/digital/heres-why-people-choose-shop-or-not-shop-their-phones-169419/), 45% of all shopping involves mobile interaction.</p>
+					<p>Take advantage of this trend by creating mobile-specific marketing campaigns, ensuring a superior experience for your mobile customers, which in turn will stimulation more action. AdWords allows for mobile-specific marketing campaigns, which are likely to perform noticeably better than more general campaigns.</p>
+					<p>Creating an app can be complex, so it is probably better to get someone who understands the process to make one for you. Once you have one, however, it can be a fantastic way to keep in contact with your customers and provide them special deals.</p>
+				</div>
+				<div id="service7" class="col-lg-12 service">
+					<div class="h2">Public Relations Content</div>
+					<p>Content Marketing is one of the most important types of Digital Marketing that revolve around the management and execution of different written, engaging, downloadable and visual Digital Media Content.</p>
+					<p>Content Marketing focuses on attracting and converting targeted audiences into customers by designing, publishing, promoting, distributing and sharing valuable and relevant free content on different digital marketing channels.</p>
+					<p>Content is the base of all types of Digital Marketing and having a proper Content Marketing Strategy  ensures better creation, channelization, and conversions for a business.</p>
+				</div>
+				<div id="service8" class="col-lg-12 service">
+					<div class="h2">Instant Messaging Marketing & SMS</div>
+					<p>Through this service, businesses will be able to communicate information such as special deals and new products directly to their customers. The general understanding at this point is that users would have to opt-in to receive messages from these companies, much like a newsletter. A limited group of businesses currently form a testing group, but this is a resource that could become very powerful when it is released to the public.</p>
+					<p>Quick responses and thorough support can significantly raise the reputation of your company, suggesting that you care about your clients.</p>
+				</div>
+				<div id="service9" class="col-lg-12 service">
+					<div class="h2">Audio Marketing & Digital Voice Calling</div>
+					<p>Audio media may not be as glitzy as video media, but it still holds a key role in the online ecosystem. The podcast phenomenon is taking over from traditional talk radio, and music streaming sites such as Spotify and Deezer are incredibly popular.</p>
+					<p>Audio advertisements on these platforms are an effective way to market your products and services. Since these podcasts usually feel more personal and relaxed than traditional radio, when the advertisements are played, they also feel more authentic – particularly when read out and endorsed by the host of the podcast.</p>
+				</div>
+			</div>  
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(".servLink").click(function(){
+			$t = $(this);
+			$(".servLink").removeClass("active");
+			$t.addClass("active");
+			$(".service").removeClass("active");
+			$($t.attr("href")).addClass("active");
+		})
+	</script>
 
 </body>
 </html>
