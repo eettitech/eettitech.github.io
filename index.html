@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EETTI TECH</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<style type="text/css">
+		body{
+			overflow-x: hidden;
+		}
+		.full_page{
+			font-family: 'Raleway', sans-serif;
+			background-image: url("home1.jpg");
+			background-attachment: fixed;
+			/*background-size: 60% 70% !important;*/
+			background-size: 60% 70% !important;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		/*.roboto{
+			font-family: 'Roboto', sans-serif;
+		}*/
+		.page_1{
+			/*background-color: rgba(14,47,64,0.5);*/
+			/*background-color: rgba(0,0,0,0.05);*/
+			color: #fff;
+			width: 100%;
+			/*height: 100px;*/
+		}
+		.header{
+			/*background-color: rgba(0,0,0,0.5);*/
+			height: 65px;
+			background-color: #fff;
+			/*box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);*/
+			position: relative;
+			width: 100%;
+			z-index: 1000;
+		}
+		.header .leftLogo{
+			width: 250px;
+			display: inline-block;
+			padding: 6px 12px;
+			font-size: 20px;
+			color: #000;
+		}
+		.header .leftLogo > img{
+			width: 80px;
+			height: 52px;
+		}
+		.header .rightNav{
+			display: inline-block;
+			float: right;
+			padding-right: 80px;
+		}
+		.header .rightNav > a{
+			padding: 20px;
+			display: inline-block;
+			color: #000;
+			font-size: 16px;
+		}
+		.header .rightNav > a.active{
+			border-bottom: 3px solid #459568;
+			text-decoration: none;
+			color: darkgoldenrod;
+		}
+		.codeText{
+			color: darkgoldenrod;
+		}
+		.page_1 .bigTitle{
+			padding-top: 12%;
+			letter-spacing: 0.02em;
+			font-size: 42px;
+			margin-bottom: 20px;
+		}
+		.page_1 .bigTitle .codeText{
+			/*color: -moz-nativehyperlinktext;*/
+			/*color: forestgreen;*/
+			color: darkgoldenrod;
+		}
+		.page_1 .pageDesc{
+			font-size: 18px;
+			font-weight: 100;
+			margin-bottom: 10px;
+			/*font-family: 'Roboto', sans-serif;*/
+		}
+		.page_1a{
+			/*height: 200px;*/
+			background-color: #f5f5f5;
+			box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+			background-image: linear-gradient(to bottom,rgba(57,115,230,.1),transparent);
+		}
+		.page_1a,.page_2,.page_3{
+			background-color: #fff;
+		}
+		.page_2,.page_3{
+			background-color: #fafafa;
+		}
+		.page_4{
+			
+		}
+		.btnContact{
+			width: 200px;
+			font-size: 20px;
+			border-radius: 0;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.lineSeparator{
+			width: 50%;
+			border-top: 1px solid darkgoldenrod;
+		}
+		.page_2 .leftOff{
+			/*background-image: url();*/
+			-webkit-transform: rotate(-30deg) translate3d(-50px,0,0);
+			-moz-transform: rotate(-30deg) translate3d(-50px,0,0);
+			-ms-transform: rotate(-30deg) translate3d(-50px,0,0);
+			-o-transform: rotate(-30deg) translate3d(-50px,0,0);
+			transform: rotate(-30deg) translate3d(-50px,0,0);
+		}
+		.page_3 .leftOff{
+			/*background-image: url();*/
+			-webkit-transform: rotate(30deg) translate3d(50px,0,0);
+			-moz-transform: rotate(30deg) translate3d(50px,0,0);
+			-ms-transform: rotate(30deg) translate3d(50px,0,0);
+			-o-transform: rotate(30deg) translate3d(50px,0,0);
+			transform: rotate(30deg) translate3d(50px,0,0);
+		}
+		.page_2 .leftOff,.page_3 .leftOff{
+			height: 500px;
+			opacity: 0;
+			transition: 1s;
+			background-repeat: no-repeat;
+			background-size: auto 80%;
+			margin-left: 100px;
+			margin-top: 100px;
+		}
+		.page_2 .rightOff,.page_3 .rightOff{
+			padding: 120px 0;
+			opacity: 0.7;
+			-webkit-transform: translate3d(0,150px,0);
+			-moz-transform: translate3d(0,150px,0);
+			-ms-transform: translate3d(0,150px,0);
+			-o-transform: translate3d(0,150px,0);
+			transform: translate3d(0,150px,0);
+			transition: 1s;
+			-webkit-transition-delay: 0.2s; /* Safari */
+    		transition-delay: 0.2s;
+		}
+		.page_1a p,.page_2 .rightOff p,.page_3 .rightOff p,.page_1a ul,.page_2 .rightOff ul,.page_3 .rightOff ul{
+			font-size: 16px;
+			line-height: 1.6em;
+		}
+		.rightContent{
+			margin-top: 20px;
+		}
+		.inlineBlock{
+			display: inline-block;
+		}
+		.lineSeparatorMid{
+			width: 75%;
+			margin: auto;
+			border-top: 0.5px solid #ccc;
+		}
+		.rightTitle{
+			padding-bottom: 10px;
+		}
+		.pageSeparator{
+			width: 80%;
+			margin: auto;
+			box-shadow: 0 0 1px 1px rgba(0,0,0,0.15);
+			display: none;
+		}
+		.text-muted{
+			color: #444;
+		}
+		.boxTop{
+			background-color: #fff;
+			background-image: linear-gradient(to bottom,rgba(57,115,230,.1),transparent);
+		}
+		.boxBottom{
+			background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			height: 300px !important;
+		}
+		.productCard{
+			width: 45%;
+			margin-left: 20px;
+			height: 200px;
+			display: inline-block;
+			/*background-color: #f5f5f5;*/
+			/*border: 1px solid #d9d9d9;*/
+			/*box-shadow: 0 0 2px 2px rgba(0,0,0,0.25);*/
+		}
+		.productCard:hover{
+			/*background-color: #f5f5f5;*/
+			box-shadow: 0 0 4px 2px rgba(0,0,0,0.25);
+			transition: 0.25s;
+		}
+		.productCard .productDetails{
+			padding-top: 10px;
+			width: 65%;
+			padding-left: 10px;
+			display: inline-block;
+		}
+		.productIcon{
+			vertical-align: top;
+			padding: 40px 20px;
+		}
+		.productIcon img{
+			width: 100px;
+			height: 100px;
+		}
+		.boxBottom{
+			padding-top: 40px;
+		}
+		.boxBottom .leftLogo{
+			font-size: 22px;
+			margin-top: 80px;
+			margin-bottom: 80px;
+			width: 30%;
+			display: inline-block;
+		}
+		.footerRight{
+			font-size: 16px;
+			width: 70%;
+			display: inline-block;
+		}
+		.footerNav{
+			width: 35%;
+			margin-left: 50px;
+			/*margin-top: 20px;*/
+			display: inline-block;
+		}
+		.navHead{
+			margin-left: 30px;
+			font-size: 18px;
+			padding-bottom: 5px;
+			margin-bottom: 5px;
+			border-bottom: 1px solid rgba(255,255,255,0.5);
+		}
+		.navItem a{
+			margin-left: 30px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			color: #444;
+			text-decoration: none;
+			display: inline-block;
+		}
+		.navItem > .navItem a{
+			margin-left: 60px;
+		}
+		.navItem a:hover{
+			color: #000;
+		}
+		.socialConnect{
+			vertical-align: top;
+			margin-top: 60px;
+			width: 55%;
+			display: inline-block;
+		}
+		.socialConnect .icon{
+			padding: 7px;
+			font-size: 22px;
+			color: #444;
+			display: inline-block;
+		}
+		.socialConnect .icon:hover{
+			transition: 0.2s;
+			color: #000;
+		}
+		.socialTitle{
+			font-size: 20px;
+		}
+		.leftOff.transform,.rightOff.transform {
+			opacity: 1;
+		    -webkit-transform: rotate(0deg) translate3d(0,0,0);
+			-moz-transform: rotate(0deg) translate3d(0,0,0);
+			-ms-transform: rotate(0deg) translate3d(0,0,0);
+			-o-transform: rotate(0deg) translate3d(0,0,0);
+			transform: rotate(0deg) translate3d(0,0,0);
+		}
+		.introContent .introBox{
+			width: 97%;
+			padding: 10px 15px;
+			margin: auto;
+			/*background-color: #f8f8f8;*/
+			/*box-shadow: 0 3px 1px 0px rgba(0,0,0,0.1);*/
+		}
+		.introContent .introBox .h3{
+			margin-top: 5px;
+		}
+	</style>
+	<div class='container-fluid paddingReset full_page'>
+		<div class='page_view page_1' id="page_1">
+			<div class='header'>
+				<div class='leftLogo hidden'><span class='codeText'><i class='fa fa-code'></i> <strong>Code</strong></span>Spanner</div>
+				<div class='leftLogo'><img src="logo.png"/> EETTI TECH</div>
+				<div class='rightNav'>
+					<a href='#page_1' class='navItem navItem1 active' data-val="page_1" data-speed="1">Home</a>
+					<a href='#page_1a' class='navItem navItem2' data-val="page_1a" data-speed="2">About Us</a>
+					<a href='#page_2' class='navItem navItem3' data-val="page_2" data-speed="3">Services</a>
+					<a href='#page_4' class='navItem navItem4' data-val="page_4" data-speed="4">Products</a>
+				</div>
+			</div>
+		</div>
+		<div class="page_view page_1a" id="page_1a">
+			<div class="container">
+				<div class="col-lg-12 col-md-12 introContent" style="margin-top: 90px;">
+					<div class="col-lg-6 col-md-6 paddingReset">
+						<div class="introBox">
+							<div class="text-center h3">Who we are?</div>
+							<div class="">
+								<p class="text-muted text-justify roboto margin-md-top" style="padding: 10px 0;">EETTI TECH is a Mobile and Web Based Application Development Company. We deliver mobile and web app and services with high quality. We have expertise professionals to provide at your business interest. We are also having a team to identify your interest in where your benefits meet.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 paddingReset">
+						<div class="introBox">
+							<div class="text-center h3">Why EETTI TECH?</div>
+							<div class="">
+								<div class="text-muted text-justify roboto margin-md-top" style="padding: 10px 0;">
+									<ul>
+										<li>Efficient team to identify your business needs and to implement the innovations into your business.</li>
+										<li>Good consultants to discuss the support requirements and up-to-date updates.</li>
+										<li>Consistent Services & Supports</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12 paddingReset" style="margin-top: 10px;">
+						<div class="text-center h3">Our Process</div>
+						<div class="lineSeparatorMid" style="width: 100px;"></div>
+						<img src="process.png" style="width:70%;margin-left: 12.5%" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12 col-md-12">
+			<div class="pageSeparator"></div>
+		</div>
+		<div class="page_view page_2" id="page_2">
+			<div class="container">
+				<div class="col-lg-12 col-md-12">
+					<div class="col-lg-6 col-md-6">
+						<div class="leftOff" style="margin-left: 0;"></div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="rightOff">
+							<div class="h2 inlineBlock">
+								<div class="inlineBlock rightTitle">
+									<span class="codeText">Mobile</span> Applications
+								</div>
+								<div class="lineSeparatorMid"></div>
+							</div>
+							<div class="rightContent">
+								<p class="text-muted text-justify roboto">EETTI TECH has a team of Android UX/UI designers, developers and mobile strategists who provide high-quality Android development services. Our team addresses rapidly changing business and technology needs by building strategic business objectives.</p>
+								<p class="text-muted text-justify roboto">Providing services that cover the entire development cycle, from concept to distribution. We deliver end-to-end custom products that encompass the complete range of iOS devices, including iPad, Apple TV, and iPhone app development.</p>
+								<p class="pull-right">
+									<a href="#">View More <i class="fa fa-chevron-right"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pageSeparator"></div>
+		<div class="page_view page_3" id="page_3">
+			<div class="container">
+				<div class="col-lg-12 col-md-12">
+					<div class="col-lg-6 col-md-6">
+						<div class="rightOff">
+							<div class="h2 inlineBlock">
+								<div class="inlineBlock rightTitle">
+									<span class="codeText">Web</span> Applications
+								</div>
+								<div class="lineSeparatorMid"></div>
+							</div>
+							<div class="rightContent">
+								<p class="text-muted text-justify roboto">A well designed and more user-friendly website makes customers will continuously return to your site and do business with your company. We provide you to keep and maintain your website by design experts.</p>
+								<p class="text-muted text-justify roboto">Websites should capable of drive leads, sales, and deeper engagement. Websites shouldn't just look pretty. A brand's website needs to act as a grow engine, powering lead generation, and sales nurturing. We design that is both usable and pleasing, delivery information and build brand, is technically sound and visually coherent, and responsive.</p>
+								<p class="pull-right">
+									<a href="#">View More <i class="fa fa-chevron-right"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="leftOff"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pageSeparator"></div>
+		<div class="page_view page_4" id="page_4">
+			<div class="boxTop">
+				<div class="container text-center">
+					<div class="h3 text-center" style="margin-top: 85px;margin-bottom: 20px;">Products</div>
+					<div class="lineSeparatorMid" style="width: 100px; margin-bottom: 10px;"></div>
+					<div class="productCard pull-left text-left">
+						<div class="productIcon inlineBlock">
+							
+						</div>
+						<div class="productDetails">
+							<div class="h4 inlineBlock">BMS–Business Manipulate System</div>
+							<p class="text-justify text-muted">BMS was optimized for fast and smooth operation on smart phones and tablets;BMS is a mobile application software that helps you to take sale orders using your android mobile for your inventory and accounting software.</p>
+							<a href="https://play.google.com/store/apps/details?id=com.EETTI TECH.bms" class="pull-right">Go to Playstore</a>
+						</div>
+					</div>
+					<div class="productCard pull-right text-left">
+						<div class="productIcon inlineBlock">
+							
+						</div>
+						<div class="productDetails">
+							<div class="h4 inlineBlock">BMS–Business Manipulate System</div>
+							<p class="text-justify text-muted">BMS was optimized for fast and smooth operation on smart phones and tablets;BMS is a mobile application software that helps you to take sale orders using your android mobile for your inventory and accounting software.</p>
+							<a href="https://play.google.com/store/apps/details?id=com.EETTI TECH.bms" class="pull-right">Go to Playstore</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxBottom footer">
+				<div class='leftLogo text-center pull-left'><img src="logo.png"/> EETTI TECH</div>
+				<div class="footerRight pull-right">
+					<div class="footerNav roboto">
+						<div class="navHead">Quick Links</div>
+						<div class="navItem">
+							<a href="#page_1">
+								<i class="fa fa-angle-right"></i> Home
+							</a>
+						</div>
+						<div class="navItem">
+							<a href="#page_1a">
+								<i class="fa fa-angle-right"></i> About Us
+							</a>
+						</div>
+						<div class="navItem">
+							<a href="#page_2">
+								<i class="fa fa-angle-right"></i> Services
+							</a>
+							<div class="navItem">
+								<a href="#">
+									<i class="fa fa-angle-right"></i> Android Applications
+								</a>
+							</div>
+							<div class="navItem">
+								<a href="#">
+									<i class="fa fa-angle-right"></i> Web Applications
+								</a>
+							</div>
+						</div>
+						<div class="navItem">
+							<a href="#page_4">
+								<i class="fa fa-angle-right"></i> Products
+							</a>
+						</div>
+					</div>
+					<div class="socialConnect text-center">
+						<div class="socialTitle">Social Connect</div>
+						<div>
+							<a href="#" class="icon">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="#" class="icon">
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<a href="#" class="icon">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="siteTitle hidden">
+  <sup style="position: absolute;">Powered by</sup><h3 style="font-size: 25px;display: inline-block;"><span style="color:brown;"><i class="fa fa-code" aria-hidden="true"></i>Code</span>Spanner{};</h3>
+</div>
+
+<style type="text/css">
+	.underConstruction{
+		position:absolute;
+		z-index:1000;
+		width:75%;
+		height:70%;
+		padding:10%;
+		padding-top:5%;
+		overflow:hidden;
+	}
+	.siteTitle{
+		position: absolute;
+		left: 44%;
+		bottom: 0;
+		z-index: 100001;
+		font-family: 'PT Sans Narrow', sans-serif;
+	}
+	/* ----------- Galaxy S3 ----------- */
+
+	/* Portrait and Landscape */
+	@media screen 
+	  and (device-width: 320px) 
+	  and (device-height: 640px) 
+	  and (-webkit-device-pixel-ratio: 2) {
+	  	.siteTitle{
+	  		left: 25%;
+	  	}
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".block > div").css({"opacity":"0"});
+	   animateNews();
+	   $('.page_1a,.page_1,.page_2,.page_3,.page_4').css({'height':$(window).height()+'px'});
+	   $(".boxTop").css({'height':(($(window).height()*3)/4)+'px'});
+	   $(".boxBottom").css({'height':($(window).height()/4)+'px'});
+	   $(".full_page").css({'background-size':"100% "+$(window).height()+"px"});
+
+	    $(".navItem").click(function() {
+	    	var id_val = $(this).attr("data-val");
+	    	var speed_val = parseInt($(this).attr("data-speed"));
+	    	var mult = $(".navItem.active").attr("data-speed");
+	    	if (mult > speed_val) {
+	    		mult = mult - speed_val;
+	    	}else{
+	    		mult = speed_val - mult;
+	    	}
+		    $('html, body').animate({
+		        scrollTop: $("#"+id_val).offset().top
+		    }, mult*500);
+		    $(".navItem").removeClass("active");
+		    // $(".navItem"+speed_val).addClass("active");
+		});
+
+		var start1 = true;
+		$(window).scroll(function() {    
+		    var scroll = $(window).scrollTop();
+		    window_height = $(window).height();
+		    a = parseInt((scroll+(window_height/2))/window_height)+1;
+		    a1 = 0;
+		    if (a >= 4) {
+		    	a -= 1;
+		    	if (a == 3) {
+		    		a1 = 1;
+		    	}
+		    }
+		    console.log(a);
+		    if ((scroll+(window_height/2)+50) >= window_height) {
+		    	$(".navItem").removeClass("active");
+		        $(".navItem"+a).addClass("active");
+		        if (a == 3) {
+			        if (a1 == 0) {
+			        	$(".page_2 .leftOff").addClass("transform");
+			        	$(".page_2 .rightOff").addClass("transform");
+			        }
+			        else{
+			        	$(".page_3 .leftOff").addClass("transform");
+			        	$(".page_3 .rightOff").addClass("transform");
+			        }
+			    }
+		        if (!start1) {
+		        	start1 = true;
+		        	$(".header").css({"box-shadow":"0 0 8px 1px rgba(0,0,0,0.15)","position":"fixed","top":"-75px"});
+		        	$(".header").animate({"top":"0px"},500);
+		        }
+		        // $(".header").animate({"position":"fixed"},500);
+		    }
+		    else{
+		    	if (scroll < 80) {
+		    		$(".navItem").removeClass("active");
+		        	$(".navItem1").addClass("active");
+		    	}
+		    	if (start1) {
+		    		start1 = false;
+		    		$(".header").css({"box-shadow":"0 0 0 0 rgba(0,0,0,0.15)","position":"relative","top":"-75px"});
+	    			$(".header").animate({"top":"0px"},500);
+		    	}
+		    }
+		    if (scroll <= window_height) {
+		    	if (scroll > 100) {
+		    		$(".page_1").css({"background-color":"rgba(100,100,100,"+ ((scroll/window_height)) +")"});
+		    	}
+		    	else{
+		    		$(".page_1").css({"background-color":"rgba(255,255,255,0)"});
+		    	}
+		    }
+		    if ((scroll>200) && ((scroll+(window_height/2)+50) <= window_height)) {
+			    b = (scroll+(window_height/2)+50)/window_height;
+			    $(".page1").css({"background-color":rgba(0,0,0,0.5*b)});
+			}
+		}); //missing );
+
+	 //    $(window).scroll(function() {
+		//   if ($(".page_2").offset().top > 600) {
+		//   	// console.log("hi");
+		//   }
+		//   console.log($(document).offsetTop);
+		// });
+	}); 
+
+	function animateNews() {
+		if ($(".slide1").css("opacity") == "0") {
+			$(".slide2").animate({"opacity":"0"},500);
+			$(".slide1").animate({"opacity":"1"},500);
+		} else{
+			$(".slide2").animate({"opacity":"1"},500);
+			$(".slide1").animate({"opacity":"0"},500);
+		};
+		window.setTimeout(function() { animateNews() }, 4000);
+	}
+</script>
+</body>
+</html>
