@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -18,7 +20,7 @@
 			background-image: url("home1.jpg");
 			background-attachment: fixed;
 			/*background-size: 60% 70% !important;*/
-			background-size: 60% 70% !important;
+			background-size: 100% 100% !important;
 			background-repeat: no-repeat;
 			background-position: center;
 		}
@@ -34,8 +36,8 @@
 		}
 		.header{
 			/*background-color: rgba(0,0,0,0.5);*/
-			height: 65px;
-			background-color: #fff;
+			height: 75px;
+			/*background-color: #fff;*/
 			/*box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);*/
 			position: relative;
 			width: 100%;
@@ -48,9 +50,9 @@
 			font-size: 20px;
 			color: #000;
 		}
-		.header .leftLogo > img{
-			width: 80px;
-			height: 52px;
+		.logo_img{
+			width: 133px;
+    		height: 62px;
 		}
 		.header .rightNav{
 			display: inline-block;
@@ -60,16 +62,16 @@
 		.header .rightNav > a{
 			padding: 20px;
 			display: inline-block;
-			color: #000;
+			color: #fff;
 			font-size: 16px;
 		}
 		.header .rightNav > a.active{
 			border-bottom: 3px solid #459568;
 			text-decoration: none;
-			color: darkgoldenrod;
+			color: #fff;
 		}
 		.codeText{
-			color: darkgoldenrod;
+			color: #fff;
 		}
 		.page_1 .bigTitle{
 			padding-top: 12%;
@@ -183,7 +185,8 @@
 			background-image: linear-gradient(to bottom,rgba(57,115,230,.1),transparent);
 		}
 		.boxBottom{
-			background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			/*background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+			background-color: #313147;
 			height: 300px !important;
 		}
 		.productCard{
@@ -241,12 +244,13 @@
 			padding-bottom: 5px;
 			margin-bottom: 5px;
 			border-bottom: 1px solid rgba(255,255,255,0.5);
+			color: #fff;
 		}
 		.navItem a{
 			margin-left: 30px;
 			padding-top: 5px;
 			padding-bottom: 5px;
-			color: #444;
+			color: #fff;
 			text-decoration: none;
 			display: inline-block;
 		}
@@ -265,7 +269,7 @@
 		.socialConnect .icon{
 			padding: 7px;
 			font-size: 22px;
-			color: #444;
+			color: #fff;
 			display: inline-block;
 		}
 		.socialConnect .icon:hover{
@@ -297,8 +301,7 @@
 	<div class='container-fluid paddingReset full_page'>
 		<div class='page_view page_1' id="page_1">
 			<div class='header'>
-				<div class='leftLogo hidden'><span class='codeText'><i class='fa fa-code'></i> <strong>Code</strong></span>Spanner</div>
-				<div class='leftLogo'><img src="logo.png"/> EETTI TECH</div>
+				<div class='leftLogo'><img src="logo.png" class="logo_img" /></div>
 				<div class='rightNav'>
 					<a href='#page_1' class='navItem navItem1 active' data-val="page_1" data-speed="1">Home</a>
 					<a href='#page_1a' class='navItem navItem2' data-val="page_1a" data-speed="2">About Us</a>
@@ -333,9 +336,7 @@
 						</div>
 					</div>
 					<div class="col-lg-12 col-md-12 paddingReset" style="margin-top: 10px;">
-						<div class="text-center h3">Our Process</div>
-						<div class="lineSeparatorMid" style="width: 100px;"></div>
-						<img src="process.png" style="width:70%;margin-left: 12.5%" />
+						<img src="process.jpg" style="width:70%;margin-left: 12.5%" />
 					</div>
 				</div>
 			</div>
@@ -425,7 +426,7 @@
 				</div>
 			</div>
 			<div class="boxBottom footer">
-				<div class='leftLogo text-center pull-left'><img src="logo.png"/> EETTI TECH</div>
+				<div class='leftLogo text-center pull-left'><img src="logo.png" class="logo_img"/></div>
 				<div class="footerRight pull-right">
 					<div class="footerNav roboto">
 						<div class="navHead">Quick Links</div>
@@ -564,7 +565,7 @@
 			    }
 		        if (!start1) {
 		        	start1 = true;
-		        	$(".header").css({"box-shadow":"0 0 8px 1px rgba(0,0,0,0.15)","position":"fixed","top":"-75px"});
+		        	$(".header").css({"box-shadow":"0 0 8px 1px rgba(0,0,0,0.15)","position":"fixed","top":"-75px","background-color":"#29324f"});
 		        	$(".header").animate({"top":"0px"},500);
 		        }
 		        // $(".header").animate({"position":"fixed"},500);
@@ -576,7 +577,7 @@
 		    	}
 		    	if (start1) {
 		    		start1 = false;
-		    		$(".header").css({"box-shadow":"0 0 0 0 rgba(0,0,0,0.15)","position":"relative","top":"-75px"});
+		    		$(".header").css({"box-shadow":"0 0 0 0 rgba(0,0,0,0.15)","position":"relative","top":"-75px","background-color":"transparent"});
 	    			$(".header").animate({"top":"0px"},500);
 		    	}
 		    }
