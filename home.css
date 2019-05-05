@@ -22,7 +22,7 @@ body{
 }
 .header{
 	/*background-color: rgba(0,0,0,0.5);*/
-	height: 96px;
+	height: 78px;
 	/*background-color: #fff;*/
 	/*box-shadow: 0 0 8px 1px rgba(0,0,0,0.15);*/
 	position: relative;
@@ -32,12 +32,12 @@ body{
 .header .leftLogo{
 	width: 250px;
 	display: inline-block;
-	padding: 6px 12px;
+	padding: 0px 12px;
 	font-size: 20px;
 	color: #000;
 }
 .logo_img{
-	width: 150px;
+	width: 140px;
 	/*height: 62px;*/
 }
 .header .rightNav{
@@ -46,15 +46,15 @@ body{
 	padding-right: 80px;
 }
 .header .rightNav > a{
-	padding: 35px 20px;
+	padding: 30px 20px;
 	display: inline-block;
 	color: #fff;
 	font-size: 16px;
 }
 .header .rightNav > a.active{
-	border-bottom: 3px solid #f2e73a;
+	/*border-bottom: 3px solid #f2e73a;*/
 	text-decoration: none;
-	color: #fff;
+	color: #f2e73a;
 }
 .codeText{
 	color: #fff;
