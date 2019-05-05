@@ -21,7 +21,7 @@
 					<a href='#page_1' class='navItem navItem1 active' data-val="page_1" data-speed="1">Home</a>
 					<a href='#page_1a' class='navItem navItem2' data-val="page_1a" data-speed="2">About Us</a>
 					<a href='#page_2' class='navItem navItem3' data-val="page_2" data-speed="3">Services</a>
-					<a href='#page_4' class='navItem navItem4' data-val="page_4" data-speed="4">Products</a>
+					<a href='#page_4' class='navItem navItem4' data-val="page_4" data-speed="4">Clients</a>
 				</div>
 			</div>
 			<ul class="cb-slideshow">
@@ -32,7 +32,7 @@
 		</div>
 		<div class="page_view page_1a" id="page_1a">
 			<div class="container-fluid">
-				<div class="col-lg-12 col-md-12 introContent" style="margin-top: 90px;">
+				<div class="col-lg-12 col-md-12 introContent" style="margin-top: 110px;">
 					<div class="col-lg-6 col-md-6 paddingReset">
 						<div class="introBox">
 							<div class="text-center h3">Who we are?</div>
@@ -67,7 +67,7 @@
 		</div>
 		<div class="page_view page_2" id="page_2">
 			<div class="container">
-				<div class="col-lg-12 col-md-12 introContent roboto ft-16" style="margin-top: 90px;">
+				<div class="col-lg-12 col-md-12 introContent roboto ft-16" style="margin-top: 110px;">
 					<div class="col-lg-12 cold-md-12 col-xs-12 text-center h3">Our Services</div>
 					<div class="col-lg-12 cold-md-12 col-xs-12 text-center">
 						<p>In today’s time, we frequently hear the term Digital Marketing and we all think that we kind of know what actually it is. This thinking sometimes limits the scope and opportunity that the complete Digital Marketing landscape can actually offer, and that is why, when it comes to nailing it down, we either turn dumbfounded or get stuck.</p>
@@ -135,26 +135,27 @@
 		<div class="page_view page_4" id="page_4">
 			<div class="boxTop">
 				<div class="container text-center">
-					<div class="h3 text-center" style="margin-top: 85px;margin-bottom: 20px;">Products</div>
+					<div class="h3 text-center" style="margin-top: 110px;margin-bottom: 20px;">Our Clients</div>
 					<div class="lineSeparatorMid" style="width: 100px; margin-bottom: 10px;"></div>
-					<div class="productCard pull-left text-left">
-						<div class="productIcon inlineBlock">
-							
+					<div class="col-lg-12 col-xs-12 clients text-center">
+						<div class="col-lg-12">
+							<div class="col-lg-2 col-xs-6"></div>
+							<div class="col-lg-4 col-xs-6">
+								<img src="hrpm.png">
+							</div>
+							<div class="col-lg-4 col-xs-6">
+								<img src="duraicards.png">
+							</div>
+							<div class="col-lg-2 col-xs-6"></div>
 						</div>
-						<div class="productDetails">
-							<div class="h4 inlineBlock">BMS–Business Manipulate System</div>
-							<p class="text-justify text-muted">BMS was optimized for fast and smooth operation on smart phones and tablets;BMS is a mobile application software that helps you to take sale orders using your android mobile for your inventory and accounting software.</p>
-							<a href="https://play.google.com/store/apps/details?id=com.EETTI TECH.bms" class="pull-right">Go to Playstore</a>
+						<div class="col-lg-4 col-xs-6">
+							<img src="greenways.png">
 						</div>
-					</div>
-					<div class="productCard pull-right text-left">
-						<div class="productIcon inlineBlock">
-							
+						<div class="col-lg-4 col-xs-6">
+							<img src="codespanner.png">
 						</div>
-						<div class="productDetails">
-							<div class="h4 inlineBlock">BMS–Business Manipulate System</div>
-							<p class="text-justify text-muted">BMS was optimized for fast and smooth operation on smart phones and tablets;BMS is a mobile application software that helps you to take sale orders using your android mobile for your inventory and accounting software.</p>
-							<a href="https://play.google.com/store/apps/details?id=com.EETTI TECH.bms" class="pull-right">Go to Playstore</a>
+						<div class="col-lg-4 col-xs-6">
+							<img src="greensand.png">
 						</div>
 					</div>
 				</div>
@@ -191,7 +192,7 @@
 						</div>
 						<div class="navItem">
 							<a href="#page_4">
-								<i class="fa fa-angle-right"></i> Products
+								<i class="fa fa-angle-right"></i> Clients
 							</a>
 						</div>
 					</div>
@@ -249,7 +250,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".block > div").css({"opacity":"0"});
-	   animateNews();
+	   // animateNews();
 	   var ht = $(window).height();
 	   if (ht > 500) {
 	   		$('.page_1,.page_3,.page_4').css({'height':ht+'px'});
@@ -345,13 +346,13 @@
 
 	function animateNews() {
 		if ($(".slide1").css("opacity") == "0") {
-			$(".slide2").animate({"opacity":"0"},500);
-			$(".slide1").animate({"opacity":"1"},500);
+			$(".slide2").animate({"opacity":"0"},200);
+			$(".slide1").animate({"opacity":"1"},200);
 		} else{
-			$(".slide2").animate({"opacity":"1"},500);
-			$(".slide1").animate({"opacity":"0"},500);
+			$(".slide2").animate({"opacity":"1"},200);
+			$(".slide1").animate({"opacity":"0"},200);
 		};
-		window.setTimeout(function() { animateNews() }, 4000);
+		window.setTimeout(function() { animateNews() }, 5000);
 	}
 </script>
 </body>
