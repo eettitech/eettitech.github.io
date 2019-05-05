@@ -96,6 +96,10 @@ body{
 	z-index: 10;
     position: relative;
 }
+.boxBottom{
+	z-index: 10;
+	position: relative;
+}
 .btnContact{
 	width: 200px;
 	font-size: 20px;
