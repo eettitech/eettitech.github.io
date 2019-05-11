@@ -1,6 +1,9 @@
 body{
 	overflow-x: hidden;
 }
+.yellow{
+	color: #f2e73a;
+}
 .full_page{
 	font-family: 'Raleway', sans-serif;
 	background-image: url("homebg.jpg");
