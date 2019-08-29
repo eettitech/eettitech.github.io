@@ -220,7 +220,7 @@ body{
 }
 .boxBottom .leftLogo{
 	font-size: 22px;
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-bottom: 80px;
 	width: 30%;
 	display: inline-block;
@@ -260,7 +260,7 @@ body{
 }
 .socialConnect{
 	vertical-align: top;
-	margin-top: 60px;
+	margin-top: 65px;
 	width: 55%;
 	display: inline-block;
 }
@@ -276,6 +276,21 @@ body{
 }
 .socialTitle{
 	font-size: 20px;
+}
+.address{
+	vertical-align: top;
+	margin-top: 0px;
+	width: 35%;
+	display: inline-block;	
+}
+.address > div{
+	padding: 2px 20px;
+}
+.yellow-line{
+	width: 310px;
+	height: 1px;
+	background-color: yellow;
+	margin: 10px 0;
 }
 .leftOff.transform,.rightOff.transform {
 	opacity: 1;
