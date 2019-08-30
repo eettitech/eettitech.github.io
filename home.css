@@ -185,7 +185,7 @@ body{
 .boxBottom{
 	/*background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
 	background-color: #313147;
-	height: 300px !important;
+	height: 380px !important;
 }
 .productCard{
 	width: 45%;
@@ -222,12 +222,12 @@ body{
 	font-size: 22px;
 	margin-top: 60px;
 	margin-bottom: 80px;
-	width: 30%;
+	width: 35%;
 	display: inline-block;
 }
 .footerRight{
 	font-size: 16px;
-	width: 70%;
+	width: 65%;
 	display: inline-block;
 }
 .footerNav{
@@ -260,7 +260,7 @@ body{
 }
 .socialConnect{
 	vertical-align: top;
-	margin-top: 65px;
+	/*margin-top: 65px;*/
 	width: 55%;
 	display: inline-block;
 }
@@ -291,6 +291,15 @@ body{
 	height: 1px;
 	background-color: yellow;
 	margin: 10px 0;
+}
+.mapView{
+	width: 55%;
+	margin: auto;
+	display: inline-block;
+}
+.mapView iframe{
+	width: 450px;
+	height: 300px;
 }
 .leftOff.transform,.rightOff.transform {
 	opacity: 1;
