@@ -1,0 +1,1052 @@
+/*home*/
+/* line 15, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* line 20, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+body {
+  background: white;
+  scroll-behavior: smooth;
+}
+
+/* line 24, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.bellota {
+  font-family: 'Bellota', cursive;
+}
+
+/* line 27, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.spartan {
+  font-family: 'Spartan', sans-serif;
+}
+
+/* line 30, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
+/* line 33, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* line 36, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.hidden {
+  display: none;
+}
+
+/* line 39, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.dk-hidden {
+  display: none;
+}
+
+/* line 42, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.full-height, .dk-full-height {
+  height: 100%;
+}
+
+/* line 45, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 48, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.pad-rl-70 {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* line 52, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.pad-rl-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 56, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.bg-color {
+  background-color: #fdeec6;
+}
+
+/* line 59, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.white {
+  color: #fff;
+}
+
+/* line 62, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.theme-color {
+  color: #fbef3c;
+}
+
+/* line 65, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+/* line 68, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home {
+  position: relative;
+  min-height: 780px;
+}
+/* line 71, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid {
+  padding: 10px 30px;
+  width: 100%;
+}
+/* line 76, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .nav-item {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  padding: 6px 2px;
+  margin: 0 12px;
+  /*border-bottom: 1px solid #fff;*/
+}
+/* line 84, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .nav-item.active {
+  color: #fbef3c;
+}
+/* line 87, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .nav-item:hover {
+  text-decoration: none;
+}
+/* line 90, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .nav-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 2px;
+  background-color: #fbef3c;
+  width: 0;
+  -webkit-transition: width .20s;
+  transition: width .20s;
+}
+/* line 101, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .nav-item:hover:after {
+  width: 100%;
+}
+/* line 104, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .menu .nav-links .active.nav-item:after {
+  width: 75%;
+  left: 12.5%;
+}
+/* line 110, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .sticky {
+  background: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+/* line 120, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+#home .container-fluid .sticky > a {
+  color: #fff !important;
+}
+
+/* line 125, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom {
+  margin-top: 40px;
+  height: 440px;
+  width: 100%;
+  background-color: #fff;
+}
+/* line 130, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect {
+  position: relative;
+  /*.home-backbox{
+  	background-color: yellow;
+  	z-index: -1;
+  	transform: rotateY(180deg);
+  	height: calc(440px + 50px);
+  	position: relative;
+  	top: -60px;
+  	visibility: hidden;
+  	.content{
+  		.title{
+  			padding-top: 40px;
+  			padding-bottom: 10px;
+  		}
+  		padding: 0 10px;
+  	}
+  }*/
+}
+/* line 132, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box, .home-bottom .rotate-effect .home-backbox {
+  height: 440px;
+  border-radius: 14px;
+  transition-duration: 0.4s;
+  top: 15px;
+  /*-webkit-transition: -webkit-transform .4s cubic-bezier(.2,.85,.4,1.275);
+  transition: -webkit-transform .4s cubic-bezier(.2,.85,.4,1.275);
+  transition: transform .4s cubic-bezier(.2,.85,.4,1.275);
+  transition: transform .4s cubic-bezier(.2,.85,.4,1.275),-webkit-transform .4s cubic-bezier(.2,.85,.4,1.275);*/
+}
+/* line 141, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content, .home-bottom .rotate-effect .home-box .content-back, .home-bottom .rotate-effect .home-backbox .content, .home-bottom .rotate-effect .home-backbox .content-back {
+  /*background-color: #fff;*/
+  text-align: center;
+  font-size: 20px;
+  padding: 0px 10px;
+  height: 230px;
+}
+/* line 142, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .title, .home-bottom .rotate-effect .home-box .content-back .title, .home-bottom .rotate-effect .home-backbox .content .title, .home-bottom .rotate-effect .home-backbox .content-back .title {
+  text-align: left;
+  font-size: 38px;
+  margin: 15px 0;
+  padding: 0 35px;
+}
+/* line 148, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .dash, .home-bottom .rotate-effect .home-box .content-back .dash, .home-bottom .rotate-effect .home-backbox .content .dash, .home-bottom .rotate-effect .home-backbox .content-back .dash {
+  content: "";
+  position: relative;
+  width: 40px;
+  height: 5px;
+  background-color: #444;
+  margin-top: 15px;
+}
+/* line 156, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .icon-img, .home-bottom .rotate-effect .home-box .content-back .icon-img, .home-bottom .rotate-effect .home-backbox .content .icon-img, .home-bottom .rotate-effect .home-backbox .content-back .icon-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 160, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .icon-img img, .home-bottom .rotate-effect .home-box .content-back .icon-img img, .home-bottom .rotate-effect .home-backbox .content .icon-img img, .home-bottom .rotate-effect .home-backbox .content-back .icon-img img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 176, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .know-more, .home-bottom .rotate-effect .home-box .content-back .know-more, .home-bottom .rotate-effect .home-backbox .content .know-more, .home-bottom .rotate-effect .home-backbox .content-back .know-more {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  left: 0;
+}
+/* line 181, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content .know-more a, .home-bottom .rotate-effect .home-box .content-back .know-more a, .home-bottom .rotate-effect .home-backbox .content .know-more a, .home-bottom .rotate-effect .home-backbox .content-back .know-more a {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 186, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content-back, .home-bottom .rotate-effect .home-backbox .content-back {
+  display: none;
+  opacity: 0;
+  transition-duration: 0s;
+  padding: 0 10px;
+}
+/* line 191, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content-back .title, .home-bottom .rotate-effect .home-backbox .content-back .title {
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+/* line 197, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box {
+  position: relative;
+  width: 100%;
+  background-color: #fdeec6;
+  padding: 10px;
+  z-index: 1;
+  /*transform: rotateY(0deg);*/
+}
+/* line 204, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .fa-icon {
+  margin: 45px auto;
+  text-align: center;
+}
+/* line 207, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .fa-icon .fa {
+  padding: 20px;
+  font-size: 38px;
+  border-radius: 50%;
+  background-color: #444;
+}
+/* line 214, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.home-bottom .rotate-effect .home-box .content {
+  padding: 0;
+}
+
+/* line 237, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .mid-line-yellow {
+  width: 100px;
+  height: 6px;
+  background-color: #fbef3c;
+  border-radius: 3px;
+  margin: 16px auto;
+}
+/* line 244, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid {
+  padding-top: 80px;
+  font-size: 64px;
+}
+/* line 248, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid-sm {
+  margin-top: 15px;
+  font-size: 20px;
+}
+/* line 251, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid-sm span {
+  position: relative;
+  padding: 10px 20px;
+}
+/* line 254, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid-sm span::before, .content .home-mid-sm span::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #ffe03a;
+  top: 12px;
+  display: none;
+}
+/* line 263, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid-sm span::before {
+  left: -55px;
+}
+/* line 266, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .home-mid-sm span::after {
+  right: -55px;
+}
+/* line 271, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .banner-img {
+  position: absolute;
+  width: 95%;
+  bottom: 0;
+}
+/* line 275, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.content .banner-img img {
+  width: 80%;
+}
+
+/* line 281, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-menu, .whatwedo .service-menu, .clients .service-menu {
+  padding-top: 8px;
+}
+/* line 283, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-menu a, .whatwedo .service-menu a, .clients .service-menu a {
+  display: inline-block;
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-right: 35px;
+  font-size: 18px;
+}
+/* line 290, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-menu a span.xs, .whatwedo .service-menu a span.xs, .clients .service-menu a span.xs {
+  display: none;
+}
+/* line 293, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-menu a .fa, .whatwedo .service-menu a .fa, .clients .service-menu a .fa {
+  display: none;
+}
+/* line 297, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-menu a.active, .whatwedo .service-menu a.active, .clients .service-menu a.active {
+  background-color: #ffe03a;
+}
+/* line 302, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item, .whatwedo .service-list .item, .clients .service-list .item {
+  display: none;
+  text-align: left;
+}
+/* line 305, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .title, .whatwedo .service-list .item .title, .clients .service-list .item .title {
+  margin: 30px 0;
+  font-size: 32px;
+}
+/* line 309, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .content, .whatwedo .service-list .item .content, .clients .service-list .item .content {
+  font-size: 24px;
+  text-align: justify;
+}
+/* line 313, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .service-icon, .whatwedo .service-list .item .service-icon, .clients .service-list .item .service-icon {
+  text-align: right;
+}
+/* line 315, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .service-icon img, .whatwedo .service-list .item .service-icon img, .clients .service-list .item .service-icon img {
+  max-height: 460px;
+}
+/* line 319, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .whatwedo-icon, .whatwedo .service-list .item .whatwedo-icon, .clients .service-list .item .whatwedo-icon {
+  padding-top: 33%;
+  text-align: center;
+}
+/* line 322, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item .whatwedo-icon img, .whatwedo .service-list .item .whatwedo-icon img, .clients .service-list .item .whatwedo-icon img {
+  /* position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-top: -250px; 
+   margin-left: -250px; */
+}
+/* line 331, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.service .service-list .item.active, .whatwedo .service-list .item.active, .clients .service-list .item.active {
+  display: block;
+}
+
+/* line 338, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.whatwedo .content .home-mid-sm, .clients .content .home-mid-sm {
+  position: relative;
+}
+/* line 340, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.whatwedo .content .home-mid-sm span, .clients .content .home-mid-sm span {
+  left: 65px;
+}
+/* line 342, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.whatwedo .content .home-mid-sm span::before, .clients .content .home-mid-sm span::before {
+  width: 40px;
+}
+/* line 345, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.whatwedo .content .home-mid-sm span::after, .clients .content .home-mid-sm span::after {
+  display: none;
+}
+
+/* line 354, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.clients .client-icons > div {
+  width: 20%;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+/* line 359, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.clients .client-icons > div img {
+  text-align: center;
+  height: 160px;
+  margin: 20px 0;
+}
+
+/* line 367, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact {
+  background-color: #31383f;
+}
+/* line 369, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form {
+  font-size: 32px;
+}
+/* line 371, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form input[type='text'], .contact form input[type='email'], .contact form input:focus {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #888;
+  outline: none;
+  box-shadow: none;
+  font-size: 28px;
+  color: #fff;
+}
+/* line 381, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form input[type='checkbox'] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+}
+/* line 389, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form input[type='checkbox']:checked {
+  background: #fbef3c;
+}
+/* line 392, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form .form-row {
+  padding: 20px 0;
+}
+/* line 394, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form .form-row .form-group {
+  padding: 0 30px;
+}
+/* line 396, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form .form-row .form-group .form-check {
+  margin-top: 15px;
+}
+/* line 398, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form .form-row .form-group .form-check label {
+  margin-left: 30px;
+  font-size: 36px;
+  color: #888;
+}
+/* line 405, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form .form-row .form-group:nth-child(1) {
+  padding-left: 0;
+}
+/* line 409, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form button {
+  font-size: 24px;
+  border: 2px solid #888;
+  padding: 12px 25px;
+  color: #888;
+}
+/* line 415, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.contact form button:hover {
+  background-color: #fbef3c;
+}
+
+/* line 420, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer {
+  height: auto;
+  background-color: #222;
+  color: #fbef3c;
+}
+/* line 424, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-left, .footer .footer-right {
+  padding: 50px 0;
+}
+/* line 427, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-left {
+  position: relative;
+  height: 380px;
+}
+/* line 430, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-left::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 300px;
+  background-color: #fbef3c;
+  top: 40px;
+  right: 0;
+}
+/* line 439, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-left .media-links {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+}
+/* line 443, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-left .media-links a {
+  margin: 0 15px;
+  color: #fbef3c;
+  display: inline-block;
+  font-size: 20px;
+}
+/* line 452, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right > div {
+  width: 33%;
+  float: left;
+  padding-left: 50px;
+}
+/* line 458, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right .line-space > div {
+  margin-top: 10px;
+}
+/* line 462, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0 !important;
+}
+/* line 469, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right .footer-links .links a {
+  margin-top: 10px;
+  font-size: 16px;
+  display: inline-block;
+  color: #fbef3c;
+}
+/* line 477, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right .footer-addr {
+  width: 66%;
+}
+/* line 479, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .footer-right .footer-addr > div {
+  width: 49%;
+  float: left;
+  padding-left: 50px;
+}
+/* line 486, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+.footer .copyright {
+  padding-bottom: 10px;
+}
+
+/*Non Mobile View*/
+@media only screen and (min-device-width: 721px) {
+  /* line 492, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home {
+    background: #000;
+  }
+
+  /* line 496, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover {
+    /*.home-backbox{
+    	visibility: initial;
+    	z-index: 100;
+    	transform: rotateY(0deg);
+    }*/
+  }
+  /* line 497, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box {
+    /*transform: rotateY(-180deg);
+    z-index: -1;*/
+    top: -40px;
+    height: calc(440px + 50px);
+    background-color: yellow;
+  }
+  /* line 503, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content {
+    display: none;
+  }
+  /* line 506, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content-back {
+    display: block;
+    opacity: 1;
+    transition-duration: 0.6s;
+  }
+  /* line 510, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content-back .title {
+    padding: 0 15px;
+  }
+}
+/*Normal Desktop View*/
+@media only screen and (max-width: 1570px) and (min-width: 721px) {
+  /* line 526, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .md-pad-rl-15 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* line 530, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home {
+    min-height: 650px;
+  }
+  /* line 535, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home .container-fluid .menu .nav-links .nav-item {
+    font-size: 16px;
+  }
+  /* line 542, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home .container-fluid .sticky a img {
+    height: 40px;
+  }
+
+  /* line 549, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom {
+    height: calc(440px - 50px);
+  }
+  /* line 552, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box, .home-bottom .rotate-effect .home-backbox {
+    height: calc(440px - 50px);
+    border-radius: 8px;
+  }
+  /* line 555, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content, .home-bottom .rotate-effect .home-backbox .content {
+    font-size: 16px;
+  }
+  /* line 557, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content .title, .home-bottom .rotate-effect .home-backbox .content .title {
+    font-size: 28px;
+    padding: 0 30px;
+    margin: 10px 0;
+  }
+  /* line 565, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .fa-icon {
+    margin: 25px auto;
+    text-align: center;
+  }
+  /* line 568, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .fa-icon .fa {
+    padding: 15px;
+    font-size: 32px;
+  }
+  /* line 573, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content {
+    padding: 0;
+  }
+  /* line 577, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-backbox {
+    height: calc(440px - 20px);
+    top: -40px;
+  }
+  /* line 581, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-backbox .content .title {
+    padding-top: 10px;
+    margin: 10px 0;
+  }
+  /* line 589, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box {
+    top: -35px;
+    height: 440px;
+  }
+  /* line 592, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content {
+    display: none;
+  }
+  /* line 595, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content-back {
+    display: block;
+    font-size: 16px;
+  }
+  /* line 598, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content-back .title {
+    font-size: 28px;
+    padding: 0 0px;
+  }
+
+  /* line 607, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .mid-line-yellow {
+    width: 82px;
+    height: 4px;
+    background-color: #fbef3c;
+    border-radius: 2px;
+    margin: 8px auto;
+  }
+  /* line 614, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid {
+    padding-top: 55px;
+    font-size: 46px;
+    margin-top: 1px;
+  }
+  /* line 619, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  /* line 623, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm span::before, .content .home-mid-sm span::after {
+    width: 25px;
+    height: 4px;
+    top: 10px;
+  }
+  /* line 628, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm span::before {
+    left: -30px;
+  }
+  /* line 631, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm span::after {
+    right: -30px;
+  }
+
+  /* line 638, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu, .whatwedo .service-menu {
+    padding-top: 18px;
+  }
+  /* line 640, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu a, .whatwedo .service-menu a {
+    margin-right: 25px;
+    font-size: 16px;
+  }
+  /* line 646, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item, .whatwedo .service-list .item {
+    margin-top: 35px;
+  }
+  /* line 648, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .title, .whatwedo .service-list .item .title {
+    margin: 5px 0;
+    font-size: 26px;
+  }
+  /* line 652, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .content, .whatwedo .service-list .item .content {
+    font-size: 16px;
+  }
+  /* line 656, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .service-icon img, .whatwedo .service-list .item .service-icon img {
+    max-height: 360px;
+  }
+
+  /* line 666, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .whatwedo .content .home-mid-sm span, .clients .content .home-mid-sm span {
+    left: 30px;
+  }
+  /* line 668, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .whatwedo .content .home-mid-sm span::before, .clients .content .home-mid-sm span::before {
+    width: 25px;
+    height: 4px;
+    top: 10px;
+  }
+
+  /* line 680, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .clients .client-icons > div img {
+    height: 120px;
+    margin: 10px 0;
+  }
+
+  /* line 687, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer {
+    height: 280px;
+  }
+  /* line 689, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left, .footer .footer-right {
+    padding: 20px 0;
+  }
+  /* line 692, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left {
+    height: 245px;
+  }
+  /* line 694, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left::after {
+    height: 240px;
+    top: 20px;
+  }
+  /* line 698, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left .media-links {
+    bottom: 20px;
+  }
+  /* line 700, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left .media-links a {
+    margin: 0 8px;
+    font-size: 16px;
+  }
+  /* line 707, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right > div {
+    padding-left: 20px;
+  }
+  /* line 711, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .line-space > div {
+    margin-top: 6px;
+  }
+  /* line 715, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .title {
+    font-size: 16px;
+  }
+  /* line 720, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-links .links a {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}
+/*Mobile View*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+  /* line 732, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .xs-hidden {
+    display: none !important;
+  }
+
+  /* line 735, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .dk-hidden {
+    display: block !important;
+  }
+
+  /* line 738, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .dk-full-height {
+    height: auto;
+  }
+
+  /* line 741, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home {
+    background: #000;
+    border-bottom: 1px solid white;
+  }
+  /* line 744, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  #home .content {
+    padding: 100px 25px;
+  }
+
+  /* line 749, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .mid-line-yellow {
+    margin: 20px auto;
+  }
+  /* line 752, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid {
+    font-size: 54px;
+    padding-bottom: 10px;
+  }
+  /* line 756, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm {
+    font-size: 20px;
+  }
+  /* line 759, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .content .home-mid-sm span::before, .content .home-mid-sm span::after {
+    top: 20px;
+  }
+
+  /* line 765, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom {
+    /*bottom: calc(440px * -8);
+    height: calc(440px * 8);*/
+    height: auto;
+  }
+  /* line 770, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box, .home-bottom .rotate-effect .home-backbox {
+    height: auto;
+  }
+  /* line 772, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content, .home-bottom .rotate-effect .home-backbox .content {
+    font-size: 42px;
+    height: auto;
+    padding: 50px 30px;
+  }
+  /* line 776, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content .title, .home-bottom .rotate-effect .home-backbox .content .title {
+    font-size: 54px;
+    padding: 0;
+  }
+  /* line 780, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content .icon-img, .home-bottom .rotate-effect .home-backbox .content .icon-img {
+    height: 200px;
+  }
+  /* line 782, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content .icon-img img, .home-bottom .rotate-effect .home-backbox .content .icon-img img {
+    margin-left: 0;
+  }
+  /* line 788, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box {
+    position: relative;
+  }
+  /* line 791, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .fa-icon .fa {
+    padding: 40px;
+    font-size: 90px;
+    background-color: #444;
+  }
+  /* line 797, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content {
+    border-bottom: 4px solid white;
+  }
+  /* line 800, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect .home-box .content-back {
+    display: none !important;
+  }
+  /* line 806, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box {
+    /*transform: rotateY(-180deg);
+    z-index: -1;*/
+    top: 0;
+    background-color: #fdeec6;
+    height: auto;
+  }
+  /* line 812, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .home-bottom .rotate-effect:hover .home-box .content {
+    display: block;
+  }
+
+  /* line 819, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .clients .client-icons {
+    text-align: center;
+    margin-top: 40px;
+  }
+  /* line 822, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .clients .client-icons > div {
+    width: 32%;
+    float: none;
+  }
+
+  /* line 828, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service, .whatwedo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  /* line 833, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .title, .whatwedo .service-list .item .title {
+    font-size: 42px;
+  }
+  /* line 836, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .content, .whatwedo .service-list .item .content {
+    font-size: 32px;
+  }
+  /* line 839, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .service-icon, .whatwedo .service-list .item .service-icon {
+    text-align: center;
+    padding-top: 5% !important;
+  }
+  /* line 842, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-list .item .service-icon img, .whatwedo .service-list .item .service-icon img {
+    max-height: 460px;
+  }
+
+  /* line 850, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu, .whatwedo .service-menu, .clients .service-menu {
+    padding-top: 50px;
+  }
+  /* line 852, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu a, .whatwedo .service-menu a, .clients .service-menu a {
+    display: inline-block;
+    color: #000;
+    padding: 15px 10px;
+    text-decoration: none;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    font-size: 28px;
+    border: 1px solid #666;
+    min-width: 25%;
+  }
+  /* line 862, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu a span.xs, .whatwedo .service-menu a span.xs, .clients .service-menu a span.xs {
+    display: inline;
+  }
+  /* line 865, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu a .fa, .whatwedo .service-menu a .fa, .clients .service-menu a .fa {
+    display: inline;
+    float: right;
+    font-size: 28px;
+    padding: 5px 10px;
+    color: #777;
+  }
+  /* line 874, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .service-menu a.active .fa, .whatwedo .service-menu a.active .fa, .clients .service-menu a.active .fa {
+    color: #000;
+  }
+  /* line 882, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .service .content .home-mid-sm span::before, .service .content .home-mid-sm span::after, .whatwedo .content .home-mid-sm span::before, .whatwedo .content .home-mid-sm span::after, .clients .content .home-mid-sm span::before, .clients .content .home-mid-sm span::after {
+    top: 20px;
+  }
+
+  /* line 889, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer {
+    height: auto;
+  }
+  /* line 891, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left {
+    height: 250px;
+    padding: 40px 0;
+  }
+  /* line 895, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left .logo img {
+    width: 250px;
+  }
+  /* line 900, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left .media-links a {
+    margin: 0 20px;
+    font-size: 40px;
+  }
+  /* line 905, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-left::after {
+    display: none;
+  }
+  /* line 909, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right {
+    display: none;
+  }
+  /* line 911, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .title {
+    font-size: 38px;
+  }
+  /* line 914, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-links {
+    width: 35%;
+    margin-left: 12%;
+    padding: 0;
+  }
+  /* line 919, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-links .links a {
+    font-size: 32px;
+  }
+  /* line 924, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-addr {
+    width: 48%;
+    padding: 0;
+  }
+  /* line 927, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-addr > div {
+    width: 100%;
+  }
+  /* line 931, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-addr .line-space > div {
+    font-size: 28px;
+  }
+  /* line 934, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .footer-right .footer-addr .line-space .title {
+    font-size: 38px;
+  }
+  /* line 940, /home/shakeer/projects/eettitech_new/app/assets/stylesheets/home.scss */
+  .footer .copyright {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+}
